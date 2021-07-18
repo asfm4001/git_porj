@@ -27,4 +27,3 @@ $ git config --list
 出現剛剛設定的使用者名稱和信箱就代表設定完成
 user.name=<使用者名稱>
 user.email=<使用者信箱>
-
