@@ -1,11 +1,14 @@
 安裝完git併設定完成後，我們先建立專案資料夾git_proj
-我們在git_proj註冊git
+我們在git_proj的資料夾內註冊git
 [git_proj]$ git init
 
 若資料夾內新增.git檔案代表註冊成功
 [git_proj]$ ls -a
 .	..	.git
 
+現在我們查看git狀況，代表你的資料夾內未新增任何檔案
+[git_proj]$ git status
+nothing to commit, working tree clean
 
-現在我們查看git狀況
+現在來新增一個檔案file_1.text，然後查看git狀況
 [git_proj]$ git status
