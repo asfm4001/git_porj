@@ -1,1 +1,30 @@
 若使用mac系統使用git前需安裝Homebrew
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+測試Homebrew安裝完成
+$ brew --verstion
+
+若有回報Homebrew版本資訊代表安裝成功
+
+
+
+安裝完Homebrew後，我們來安裝git
+$ brew install git
+
+測試git安裝完成
+$ git --verstion
+
+若有回報git版本資訊代表安裝成功
+
+
+安裝完後git後，我們來設定git使用者名稱和信箱
+$ git config --global user.name "使用者名稱"
+$ git config --global user.email "使用者信箱"
+
+設定完成後測試剛剛設定的資訊
+$ git config --list
+
+出現剛剛設定的使用者名稱和信箱就代表設定完成
+user.name=<使用者名稱>
+user.email=<使用者信箱>
+
