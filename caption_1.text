@@ -10,5 +10,28 @@
 [git_proj]$ git status
 nothing to commit, working tree clean
 
-現在來新增一個檔案file_1.text，然後查看git狀況
+現在來新增一個檔案file_1.text，然後查看git狀況會出現紅字，代表file_1.text未列入追蹤
 [git_proj]$ git status
+Untracjed files:
+	file_1.text
+
+我們來將file_1.text列入追蹤
+[git_proj]$ git add file_1.text
+
+或者也可將資料夾內的所有檔案都列入追蹤
+[git_proj]$ git add .
+
+再次查看git狀況，顯示綠色代表已加入追蹤
+[git_proj]$ git status
+Changes to be committed:
+	new file: file_1.text
+
+加入追蹤後，我們將追蹤的檔案儲存至本地資料庫且新增備註
+[git_proj]$ git commit -m "add file_1.text"
+
+若你加入追蹤的檔案(file_1.text)有做更動時(這是一個測試檔案)，查看git狀況會發現下方出現紅字，代表這些檔案有更動過
+[git_proj]$ git status
+Changes to be committed:
+	new file: file_1.text
+Changes not staged for commit:
+	modified:	file_1.text
